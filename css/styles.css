@@ -70,7 +70,7 @@ a.submit-btn{
 
 }
 .navbar-fixed-top .navbar-inner{
-  background: none;
+  background: #f5f5f5;
   box-shadow: none;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
@@ -113,6 +113,9 @@ a.submit-btn{
 .right-sidebar .lower-right{
   margin-top: 30px;
 }
+.main-viewport{
+  padding: 0 30px;
+}
  /*  Responsive Image Boxes
  ========================================================================== */
 .box-large {
@@ -133,7 +136,7 @@ a.submit-btn{
   padding: 10px;
 }
 .box-medium {
-  width: 35%;
+  width: 32%;
   max-width:350px;
   /*  padding-bottom: 35%;*/
   color: #FFF;
@@ -142,7 +145,7 @@ a.submit-btn{
 }
 
 .box-small {
-  width: 45%;
+  width: 42%;
   max-width:350px;
   /*  padding-bottom: 45%;*/
   color: #FFF;
@@ -277,21 +280,15 @@ margin-top: 50px;
     .main-container{
       padding-top: 0px;
     }
-/*    .app-main-inner{
-      margin-top: 5%;
-    }*/
 
     .box-large {
       width: 50%;
-/*        padding-bottom: 50%;*/
     }
     .box-medium {
-      width: 100%;
-/*        padding-bottom: 40%;*/
+      width: 75%;
     }      
     .box-small {
       width: 100%;
-/*        padding-bottom: 33.3%;*/
     }
   }
 
