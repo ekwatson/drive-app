@@ -1,0 +1,344 @@
+/*
+
+Title: Drive App for The Dog Door
+Author: Emily K. Watson 
+Version: 1
+
+
+
+color swatches:
+
+
+
+
+
+
+*/
+
+
+
+
+
+/* ==========================================================================
+ Globals
+ ========================================================================== */
+html, body{
+height: 100%;
+font-family: 'Helvetica';
+}
+h1, h2, h3{
+  line-height: 30px;
+}
+/* ==========================================================================
+ Typography and Links
+ ========================================================================== */
+a.start-btn{
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius: 20px;
+  display:block;
+  width: 75px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+a.next-btn{
+  float: right;
+}
+.branding a{
+  font-weight:100;
+  color:#000;
+  font-size: 4em;
+}
+a.submit-btn{
+  margin-top: 30px;
+}
+/* ==========================================================================
+ Header and Navbar
+ ========================================================================== */
+.branding{
+  margin-top: 10px;
+  padding:20px 0;
+  float: left;
+}
+.navbar .nav{
+  float:right;
+  padding:20px 0;
+
+}
+.navbar-fixed-top .navbar-inner{
+  background: none;
+  box-shadow: none;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+  background: none;
+  box-shadow: none;
+}
+
+/* ==========================================================================
+ Structure
+ ========================================================================== */
+.main-container{
+  padding-top: 100px;
+}
+.container-fluid{
+  width: 1400px;
+  max-width: 100%;
+  margin:0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.inner-container{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.options{
+  clear: both;
+}
+/* ==========================================================================
+ App Main
+ ========================================================================== */
+ /*  layout
+ ========================================================================== */
+.left-sidebar{
+  margin-top: 15%;
+}
+.right-sidebar{
+  margin-top: 5%;
+}
+.right-sidebar .lower-right{
+  margin-top: 30px;
+}
+ /*  Responsive Image Boxes
+ ========================================================================== */
+.box-large {
+  width: 25%;
+  max-width:350px;
+  /*padding-bottom: 20%;*/
+  color: #FFF;
+  position: relative;
+  float: left;
+}
+.box-large-inner, .box-medium-inner, .box-small-inner {
+  position: relative;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+ /* background: #666;*/
+  padding: 10px;
+}
+.box-medium {
+  width: 35%;
+  max-width:350px;
+  /*  padding-bottom: 35%;*/
+  color: #FFF;
+  position: relative;
+  float: left;
+}
+
+.box-small {
+  width: 45%;
+  max-width:350px;
+  /*  padding-bottom: 45%;*/
+  color: #FFF;
+  position: relative;
+  float: left;
+}
+
+ /*  Sections
+ ========================================================================== */
+.main-viewport .main-intro{
+  padding:0 25px;
+}
+.main-viewport h1{
+text-align: center;
+margin-bottom: 60px;
+}
+.left-sidebar h2:first-child, .right-sidebar h2:first-child{
+  font-size: 1.2em;
+}
+.right-sidebar .message{
+  border:1px dashed #ccc;
+  padding: 5px;
+}
+.controls{
+  padding:20px;
+}
+.submit{
+  text-align: center;
+  clear: both;
+}
+/* ==========================================================================
+ Social
+ ========================================================================== */
+.social{
+  padding:10px;
+  float:right;
+}
+.social span{
+  padding-right: 20px;
+}
+
+/* ==========================================================================
+ footer
+ ========================================================================== */
+#footer {
+margin-top: 50px;
+}
+#footer p {
+  float:left;
+}
+    /* Sticky footer styles
+    -------------------------------------------------- */
+
+    html,
+    body {
+      height: 100%;
+      /* The html and body elements cannot have any padding or margin. */
+    }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      /* Negative indent footer by it's height */
+      margin: 0 auto -60px;
+    }
+
+    /* Set the fixed height of the footer here */
+    #push,
+    #footer {
+      height: 60px;
+    }
+    #footer {
+      background-color: #f5f5f5;
+    }
+
+    /* Lastly, apply responsive CSS fixes as necessary */
+
+
+
+
+
+
+  @media only screen and (max-width : 1290px){
+   
+    .box-large {
+      width: 25%;
+/*        padding-bottom: 25%;*/
+    }
+    .box-medium {
+      width: 40%;
+/*        padding-bottom: 40%;*/
+    }
+    .box-small {
+      width: 50%;
+/*        padding-bottom: 50%;*/
+    }      
+  }
+      @media only screen and (max-width : 1050px){
+  
+    .box-large {
+      width: 33.3%;
+/*        padding-bottom: 33.3%;*/
+    }
+    .box-medium {
+      width: 49.3%;
+/*        padding-bottom: 53.3%;*/
+    }
+    .box-small {
+      width: 47.3%;
+/*        padding-bottom: 47.3%;*/
+    }      
+  }
+  @media (max-width: 979px) {
+    .main-container{
+      padding-top: 0;
+    }
+  }
+  @media (max-width: 767px) {
+
+    #footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .inner-container{
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .main-container{
+      padding-top: 0px;
+    }
+/*    .app-main-inner{
+      margin-top: 5%;
+    }*/
+
+    .box-large {
+      width: 50%;
+/*        padding-bottom: 50%;*/
+    }
+    .box-medium {
+      width: 100%;
+/*        padding-bottom: 40%;*/
+    }      
+    .box-small {
+      width: 100%;
+/*        padding-bottom: 33.3%;*/
+    }
+  }
+
+  @media only screen and (max-width : 650px){
+    [class*="span"],
+    .uneditable-input[class*="span"],
+    .row-fluid [class*="span"] {
+      float: left;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .span12,
+    .row-fluid .span12 {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .row-fluid [class*="offset"]:first-child {
+      margin-left: 0;
+    }
+
+    .box-large {
+      width: 47.3%;
+/*        padding-bottom: 33.3%;*/
+    }
+    .box-medium {
+      width: 33.3%;
+/*        padding-bottom: 53.3%;*/
+    }
+    .box-small {
+      width: 33.3%;
+/*        padding-bottom: 47.3%;*/
+    }      
+  }
+
+
+
+
+  }
+
+      @media only screen and (max-width : 480px) {
+
+
+  }
+
