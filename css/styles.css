@@ -24,7 +24,7 @@ color swatches:
  ========================================================================== */
 html, body{
 height: 100%;
-font-family: 'Helvetica';
+font-family: 'OpenSansRegular';
 }
 h1, h2, h3{
 
@@ -42,15 +42,20 @@ a{
 ul{
   list-style: none;
 }
+
 /* ==========================================================================
  Typography
  ========================================================================== */
-
+span.special{
+  font-size: 3em;
+  color: #4eab57;
+  font-family: 'OpenSansLight'; 
+}
 
 /* ==========================================================================
  Links and Buttons
  ========================================================================== */
-a.start-btn, a.skip, a.buy{
+a.start-btn, a.skip, a.buy, a.submit-btn{
   padding: 15px 30px;
   text-align: center;
   -moz-border-radius:40px;
@@ -61,11 +66,14 @@ a.skip{
   font-size: 1.2em;
 }
 a.start-btn{
-
   font-size: 2em;
 }
 a.next-btn{
   float: right;
+}
+a.previous-btn, a.next-btn{
+  font-weight: bold;
+  font-size: 1.5em;
 }
 .branding a{
   font-weight:100;
@@ -73,8 +81,26 @@ a.next-btn{
   font-size: 4em;
 }
 a.submit-btn{
+  display: inline-block;
   margin-top: 30px;
 }
+a.btn-custom-2 {
+  background-color: hsl(126, 37%, 39%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4eab57", endColorstr="#3e8846");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#4eab57), to(#3e8846));
+  background-image: -moz-linear-gradient(top, #4eab57, #3e8846);
+  background-image: -ms-linear-gradient(top, #4eab57, #3e8846);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4eab57), color-stop(100%, #3e8846));
+  background-image: -webkit-linear-gradient(top, #4eab57, #3e8846);
+  background-image: -o-linear-gradient(top, #4eab57, #3e8846);
+  background-image: linear-gradient(#4eab57, #3e8846);
+  border-color: #3e8846 #3e8846 hsl(126, 37%, 36.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+  -webkit-font-smoothing: antialiased;
+}
+
 a.btn-custom {
   background-color: hsl(198, 73%, 37%) !important;
   background-repeat: repeat-x;
@@ -155,7 +181,7 @@ a.btn-custom:hover {
   padding-left: 20px;
 }
 .inner-container .home-content{
-  margin-top: 4%;
+  margin-top: 1%;
 }
 .options{
   clear: both;
@@ -166,13 +192,13 @@ a.btn-custom:hover {
  /*  layout
  ========================================================================== */
 .left-sidebar{
-  margin-top: 10%;
+  margin-top: 9.5%;
 }
 .right-sidebar{
-  margin-top: 3%;
+  margin-top: 0%;
 }
 .right-sidebar .lower-right{
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .main-viewport{
   padding: 0 30px;
@@ -188,6 +214,13 @@ a.btn-custom:hover {
   width: 195px;
   max-width: 100%;
   padding-top: 10px;
+  margin:15px 5px 10px 5px;
+}
+.submit{
+
+}
+p.final-message{
+  display: none;
 }
  /*  Responsive Image Boxes
  ========================================================================== */
@@ -233,7 +266,7 @@ a.btn-custom:hover {
 }
 .main-viewport h1{
 text-align: center;
-margin-bottom: 60px;
+margin-bottom: 30px;
 }
 .left-sidebar h2:first-child, .right-sidebar h2:first-child{
   font-size: 1.2em;
@@ -255,13 +288,16 @@ margin-bottom: 60px;
  .home-content .intro h1{
   font-size: 3.5em;
  }
-.span6.exception{
-  padding: 30px 20px;
+.exception{
+  padding: 20px;
   margin-top:40px;
   background: #f5f5f5;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius: 10px;
+}
+.exception .intro{
+  margin-bottom: 25px;
 }
 .how-content section img{
   float: right;
@@ -284,8 +320,9 @@ margin-bottom: 60px;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
   border-radius: 10px;
-  
+
 }
+
 /* ==========================================================================
   Result Content
  ========================================================================== */
@@ -323,9 +360,10 @@ margin-bottom: 60px;
  footer
  ========================================================================== */
 #footer {
-
+  margin-top: 20px;
 }
 #footer p {
+  padding-top: 20px;
   float:left;
 }
     /* Sticky footer styles
@@ -365,31 +403,25 @@ margin-bottom: 60px;
   @media only screen and (max-width : 1290px){
    
     .box-large {
-      width: 25%;
-/*        padding-bottom: 25%;*/
+      width: 33%;
     }
     .box-medium {
       width: 40%;
-/*        padding-bottom: 40%;*/
     }
     .box-small {
       width: 50%;
-/*        padding-bottom: 50%;*/
     }      
   }
       @media only screen and (max-width : 1050px){
   
     .box-large {
       width: 33.3%;
-/*        padding-bottom: 33.3%;*/
     }
     .box-medium {
       width: 49.3%;
-/*        padding-bottom: 53.3%;*/
     }
     .box-small {
       width: 47.3%;
-/*        padding-bottom: 47.3%;*/
     }      
   }
   @media (max-width: 979px) {
