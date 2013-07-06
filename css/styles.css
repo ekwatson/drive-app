@@ -84,7 +84,7 @@ a.submit-btn{
   display: inline-block;
   margin-top: 30px;
 }
-a.btn-custom-2 {
+.btn-custom-2 {
   background-color: hsl(126, 37%, 39%) !important;
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4eab57", endColorstr="#3e8846");
@@ -150,9 +150,10 @@ a.btn-custom:hover {
   padding:20px 0;
 
 }
-.navbar-fixed-top .navbar-inner{
-  background: #f5f5f5;
+.navbar .navbar-inner{
+  background: transparent;
   box-shadow: none;
+  border: none;
 }
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
   background: none;
@@ -163,15 +164,15 @@ a.btn-custom:hover {
  Structure
  ========================================================================== */
 .main-container{
-  padding-top: 100px;
+
 }
-.navbar-fixed-top .container{
-  width: 1400px;
+.navbar .container{
+  width: 1600px;
   max-width: 100%; 
 }
 .container-fluid{
-  width: 1400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 2400px;
   margin:0 auto;
   padding-left: 0;
   padding-right: 0;
